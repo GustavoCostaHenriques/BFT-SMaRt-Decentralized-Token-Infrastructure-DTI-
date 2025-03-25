@@ -23,18 +23,14 @@ Após clonar a biblioteca, navegue até o diretório correto e copie os arquivos
 Cole o diretório **dti** dentro desta pasta.
 
 ### 3️⃣ Instalar Dependências
-Certifique-se de ter o **Gradle** instalado e execute o seguinte comando para compilar e instalar:
+Certifique-se de ter o **Gradle** instalado e execute o seguinte comando na diretoria library para compilar e instalar:
 
 ```bash
  ./gradlew installDist
 ```
 
 ### 4️⃣ Iniciar os Servidores
-Agora, abra **cinco terminais** e execute os seguintes comandos, um por terminal, para iniciar as réplicas do servidor:
-
-```bash
- cd library/build/install/library
-```
+Agora, mude para a diretoria **library/build/install/library** e abra **cinco terminais Linux** e execute os seguintes comandos, um por terminal, para iniciar as réplicas do servidor:
 
 ```bash
  ./smartrun.sh dti.bftdti.BFTDtiServer 0
@@ -51,9 +47,10 @@ Agora, abra **cinco terminais** e execute os seguintes comandos, um por terminal
 ```bash
  ./smartrun.sh dti.bftdti.BFTDtiServer 3
 ```
+```
 
 ### 5️⃣ Executar um Cliente
-Para rodar um cliente, abra **um novo terminal** e execute o seguinte comando, substituindo `<client_id>` pelo ID do cliente que deseja criar:
+Para rodar um cliente, abra **um novo terminal Linux** e vá de novo para a diretoria **library/build/install/library** e execute o seguinte comando, substituindo `<client_id>` pelo ID do cliente que deseja criar:
 
 ```bash
  ./smartrun.sh dti.bftdti.BFTDtiInteractiveClient <client_id>
@@ -64,10 +61,9 @@ Para rodar um cliente, abra **um novo terminal** e execute o seguinte comando, s
 ## 🛠️ Requisitos
 - **Java 8+**
 - **Gradle**
-- **Git**
 - **Múltiplos terminais para rodar as réplicas**
 
 ---
 
 ## 📌 Sobre o Projeto
-A infraestrutura de token descentralizada desenvolvida neste projeto garante **resistência a falhas bizantinas (BFT)**, utilizando o protocolo de replicação **BFT-SMaRt**. Esse sistema é ideal para aplicações que exigem alta confiabilidade e segurança, como mercados de NFTs descentralizados.
+A infraestrutura de token descentralizada desenvolvida neste projeto garante **resistência a falhas bizantinas (BFT)**, utilizando o protocolo de replicação **BFT-SMaRt**. Como foi explicitado no enunciado o único cliente capaz de criar moedas (operação MINT) é o que tiver ID 4. Para além disso, todo o resto do projeto funciona tal como pedido.
