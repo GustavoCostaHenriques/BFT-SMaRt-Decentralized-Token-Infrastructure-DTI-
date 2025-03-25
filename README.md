@@ -47,7 +47,6 @@ Agora, mude para a diretoria **library/build/install/library** e abra **cinco te
 ```bash
  ./smartrun.sh dti.bftdti.BFTDtiServer 3
 ```
-```
 
 ### 5️⃣ Executar um Cliente
 Para rodar um cliente, abra **um novo terminal Linux** e vá de novo para a diretoria **library/build/install/library** e execute o seguinte comando, substituindo `<client_id>` pelo ID do cliente que deseja criar:
@@ -61,7 +60,7 @@ Para rodar um cliente, abra **um novo terminal Linux** e vá de novo para a dire
 ## 🛠️ Requisitos
 - **Java 8+**
 - **Gradle**
-- **Múltiplos terminais para rodar as réplicas**
+- **Múltiplos terminais Linux para rodar as réplicas**
 
 ---
 
